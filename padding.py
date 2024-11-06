@@ -25,7 +25,7 @@ def letterbox(im, new_shape=(640, 640), color=(0, 0, 0)):
     return im, ratio, (dw, dh)
 
 
-with open("/home/hdd/colorring_clean/colorring_clean/images.txt", "r") as buffer:
+with open("/home/hdd/colorring_clean/colorring_clean.txt", "r") as buffer:
     for tmp in buffer:
         img = cv2.imread(tmp[:-1])
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
